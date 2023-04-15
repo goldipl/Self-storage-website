@@ -22,6 +22,9 @@ const Header = () => {
             <Li>
                 <Link to={`#gallery`}>Cennik</Link>
             </Li>
+            <Li>
+                <Link to={`#contact`}>Kontakt</Link>
+            </Li>
         </List>
       </NavbarContainer>
     </Navbar>
