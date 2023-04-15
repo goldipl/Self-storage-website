@@ -32,7 +32,6 @@ export const Navbar = styled.div `
     width: 100vw;
     height: 60px;
     background-color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(244, 11, 0, 0.15);
 `;
 
 export const NavbarContainer = styled.div `
@@ -66,20 +65,24 @@ export const List = styled.ul `
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    height: 60px;
 `;
 
 export const Li = styled.li `
-    margin-right: 16px;
+    margin-right: 32px;
     list-style: none;
+    height: 60px;
+    &:hover {
+      border-bottom: 6px solid #ED0F04;
+    }
     a {
-        display: block;
-        margin: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: max-content;
         text-decoration: none;
         color: #ED0F04;
-        &:hover {
-            font-weight: 600;
-        }
+        height: 60px
     }
 `;
 

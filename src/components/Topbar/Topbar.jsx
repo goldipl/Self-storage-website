@@ -14,7 +14,7 @@ const Topbar = () => {
                 <a href="http://www.instagram.com">
                     <box-icon type='logo' name='instagram'></box-icon>
                 </a>
-                <ActionButton href='https://www.github.com/goldipl'>Kliknij</ActionButton>
+                <ActionButton href='tel:+48600600600'>Tel. +48 600 600 600</ActionButton>
             </SocialsContainer>
         </TopbarContainer>
     </TopbarBox>
@@ -55,6 +55,7 @@ export const ActionButton = styled.a `
     transition: 0.6s;
     cursor: pointer;
     text-decoration: none;
+    filter: none !important;
     &:hover {
         background-color: #FFFFFF;
         color: #ED0F04; 
@@ -68,8 +69,9 @@ export const SocialsContainer = styled.div `
     align-items: center;
     a {
         margin-right: 16px;
+        filter: invert(100%);
         &:hover {
-            filter: invert(100%);
+            filter: invert(0%);
         }
     }
 `;
