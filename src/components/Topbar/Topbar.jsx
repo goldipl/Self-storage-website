@@ -5,7 +5,7 @@ const Topbar = () => {
   return (
     <TopbarBox>
         <TopbarContainer>
-            <Text>Najnowocześniejsze magazyny w Polsce. Unikat na skalę świątową.</Text>
+            <Text>Najnowocześniejsze magazyny w Polsce. Unikat na skalę światową.</Text>
             <ActionButton>Kliknij</ActionButton>
         </TopbarContainer>
     </TopbarBox>
