@@ -36,7 +36,7 @@ export const TopbarContainer = styled.div `
 `;
 
 export const Text = styled.p `
-    font-size: 18px;
+    font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
 `;

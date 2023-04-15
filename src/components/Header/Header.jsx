@@ -46,16 +46,16 @@ export const NavbarContainer = styled.div `
 `;
 
 export const Logo = styled.div `
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
     color: #000000;
     margin-right: 16px;
     a {
         text-decoration: none;
         color: #000000;
         span {
-          font-size: 12px;
-          font-weight: 400;
+          font-size: 16px;
+          font-weight: 300;
           color: #ED0F04;
         }
     }
