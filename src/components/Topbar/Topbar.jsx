@@ -1,12 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
+import 'boxicons'
 
 const Topbar = () => {
   return (
     <TopbarBox>
         <TopbarContainer>
             <Text>Najnowocześniejsze magazyny w Polsce. Unikat na skalę światową.</Text>
-            <ActionButton>Kliknij</ActionButton>
+            <SocialsContainer>
+                <a href="http://www.facebook.com">
+                    <box-icon type='logo' name='facebook-square'></box-icon>
+                </a>
+                <a href="http://www.instagram.com">
+                    <box-icon type='logo' name='instagram'></box-icon>
+                </a>
+                <ActionButton href='https://www.github.com/goldipl'>Kliknij</ActionButton>
+            </SocialsContainer>
         </TopbarContainer>
     </TopbarBox>
   )
@@ -37,18 +46,31 @@ export const ActionButton = styled.a `
     justify-content: center;
     align-items: center;
     width: max-content;
-    height: 24px;
+    height: 40px;
     padding: 0 16px;
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #ED0F04;
+    color: #FFFFFF;
     font-size: 16px;
     line-height: 18px;
     transition: 0.6s;
     cursor: pointer;
+    text-decoration: none;
     &:hover {
-        background-color: #000000;
-        color: #FFFFFF; 
+        background-color: #FFFFFF;
+        color: #ED0F04; 
+        filter: none !important;
+    }
+`;
+
+export const SocialsContainer = styled.div `
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        margin-right: 16px;
+        &:hover {
+            filter: invert(100%);
+        }
     }
 `;
 
