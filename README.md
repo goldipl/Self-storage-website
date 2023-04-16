@@ -15,6 +15,8 @@ Used technologies:
 * JavaScript
 * React
 * Styled Components
+* AoS.js
+* BoxIcons
 
 ## Screenshots
 * Desktop version :computer:     
