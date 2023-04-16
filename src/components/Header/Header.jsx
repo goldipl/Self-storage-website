@@ -31,13 +31,13 @@ const Header = () => {
   )
 }
 
-export const Navbar = styled.div `
+const Navbar = styled.div `
     width: 100vw;
     height: 60px;
     background-color: #FFFFFF;
 `;
 
-export const NavbarContainer = styled.div `
+const NavbarContainer = styled.div `
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,7 +47,7 @@ export const NavbarContainer = styled.div `
     margin: 0 auto;
 `;
 
-export const Logo = styled.div `
+const Logo = styled.div `
     font-size: 32px;
     font-weight: 700;
     color: #000000;
@@ -63,7 +63,7 @@ export const Logo = styled.div `
     }
 `;
 
-export const List = styled.ul `
+const List = styled.ul `
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +71,7 @@ export const List = styled.ul `
     height: 60px;
 `;
 
-export const Li = styled.li `
+const Li = styled.li `
     margin-right: 32px;
     list-style: none;
     height: 60px;

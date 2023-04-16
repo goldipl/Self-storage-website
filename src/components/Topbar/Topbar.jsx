@@ -21,12 +21,12 @@ const Topbar = () => {
   )
 }
 
-export const TopbarBox = styled.div `
+const TopbarBox = styled.div `
     width: 100vw;
     background-color: #043A8F;
 `;
 
-export const TopbarContainer = styled.div `
+const TopbarContainer = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,13 +35,13 @@ export const TopbarContainer = styled.div `
     margin: 0 auto;
 `;
 
-export const Text = styled.p `
+const Text = styled.p `
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
 `;
 
-export const ActionButton = styled.a `
+const ActionButton = styled.a `
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@ export const ActionButton = styled.a `
     }
 `;
 
-export const SocialsContainer = styled.div `
+const SocialsContainer = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
