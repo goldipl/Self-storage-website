@@ -23,7 +23,7 @@ const Topbar = () => {
 
 const TopbarBox = styled.div `
     width: 100vw;
-    background-color: #043A8F;
+    background-color: #112F5E;
 `;
 
 const TopbarContainer = styled.div `
