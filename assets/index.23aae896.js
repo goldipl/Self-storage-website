@@ -252,7 +252,7 @@ svg {
 `+Ce)})})(this,0,N);break;case"name":(function(Q,re,te){var F=Q._state;F.currentName=te,F.$iconHolder.textContent="",te&&F.type!==void 0&&Q.constructor.getIconSvg(te,F.type).then(function(Ce){F.currentName===te&&(F.$iconHolder.innerHTML=Ce)}).catch(function(Ce){console.error("Failed to load icon: "+te+`
 `+Ce)})})(this,0,N);break;case"color":ee.style.fill=N||"";break;case"size":(function(Q,re,te){var F=Q._state;F.size&&(F.$iconHolder.style.width=F.$iconHolder.style.height="",F.size=F.sizeType=null),te&&!/^(xs|sm|md|lg)$/.test(F.size)&&(F.size=te.trim(),F.$iconHolder.style.width=F.$iconHolder.style.height=F.size)})(this,0,N);break;case"rotate":L&&ee.classList.remove("bx-rotate-"+L),N&&ee.classList.add("bx-rotate-"+N);break;case"flip":L&&ee.classList.remove("bx-flip-"+L),N&&ee.classList.add("bx-flip-"+N);break;case"animation":L&&ee.classList.remove("bx-"+L),N&&ee.classList.add("bx-"+N)}}},{key:"connectedCallback",value:function(){y()&&f.ShadyCSS.styleElement(this)}}]),C}());o.default=E,E.define()}])},e.exports=n()})})(Cv);const Ev=()=>A(_v,{children:nt(Pv,{children:[A(Nv,{children:"Najnowocze\u015Bniejsze magazyny w Polsce. Unikat na skal\u0119 \u015Bwiatow\u0105."}),nt(Ov,{children:[A("a",{href:"http://www.facebook.com",children:A("box-icon",{type:"logo",name:"facebook-square"})}),A("a",{href:"http://www.instagram.com",children:A("box-icon",{type:"logo",name:"instagram"})}),A(Tv,{href:"tel:+48600600600",children:"Tel. +48 600 600 600"})]})]})}),_v=ue.div`
     width: 100vw;
-    background-color: #043A8F;
+    background-color: #112F5E;
 `,Pv=ue.div`
     display: flex;
     justify-content: space-between;
