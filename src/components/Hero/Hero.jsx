@@ -7,12 +7,14 @@ const Hero = () => {
   return (
     <HeroContainer>
       <Image src={selfstorageimg} alt="self-storage"/>
-      <div >
-      <TextContainer data-aos="fade-in" data-aos-duration="3000">
-        <H1>Szukasz dodatkowego miejsca do przechowywania?</H1>
-        <H2>Zapraszamy!</H2>
-      </TextContainer>
-      </div>
+      <HeroBoxContainer>
+        <TextContainer data-aos="fade-up" data-aos-duration="3000">
+          <H1>Szukasz dodatkowego miejsca do przechowywania?</H1>
+        </TextContainer>
+        <ButtonsContainer data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
+          <CheckButton>Sprawdź cenę</CheckButton>
+        </ButtonsContainer>
+      </HeroBoxContainer>
     </HeroContainer>
   )
 }
@@ -38,26 +40,47 @@ const Image = styled.img `
 `;
 
 const TextContainer = styled.div `
-  position: absolute;
   display: flex;
-  flex-direction: column;
-  top: 40%;
-  left: 15%;
-  transform: translateY(-50%);
 `;
 
 const H1 = styled.h1 `
-  font-size: 40px;
+  font-size: 42px;
   color: #FFFFFF;
   margin-top: 0;
+  text-align: center;
+`;
+
+const HeroBoxContainer = styled.div `
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 600px;
-`;
+`
 
-const H2 = styled.h2 `
-  font-size: 24px;
+const ButtonsContainer = styled.div `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const CheckButton = styled.a `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 0;
-  margin-left: 30vw;
-`;
-
+  border: 1px solid #ED0F04;
+  border-radius: 2px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.8s;
+  &:hover {
+    color: #ED0F04;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+  }
+`
 export default Hero
