@@ -48,6 +48,9 @@ const H1 = styled.h1 `
   color: #FFFFFF;
   margin-top: 0;
   text-align: center;
+  @media (max-width: 800px) {
+    font-size: 32px;
+  }
 `;
 
 const HeroBoxContainer = styled.div `
@@ -56,6 +59,9 @@ const HeroBoxContainer = styled.div `
   left: 50%;
   transform: translateX(-50%);
   width: 600px;
+  @media (max-width: 800px) {
+    width: 80%;
+  }
 `
 
 const ButtonsContainer = styled.div `

@@ -28,17 +28,26 @@ const TopbarBox = styled.div `
 
 const TopbarContainer = styled.div `
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 70vw;
     height: 40px;
     margin: 0 auto;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        height: auto;
+    }
 `;
 
 const Text = styled.p `
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
+    @media (max-width: 800px) {
+        text-align: center;
+        font-size: 12px;
+    }
 `;
 
 const ActionButton = styled.a `

@@ -35,6 +35,9 @@ const Navbar = styled.div `
     width: 100vw;
     height: 60px;
     background-color: #FFFFFF;
+    @media (max-width: 800px) {
+        height: auto;
+    }
 `;
 
 const NavbarContainer = styled.div `
@@ -45,6 +48,10 @@ const NavbarContainer = styled.div `
     width: 70vw;
     height: 60px;
     margin: 0 auto;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        height: auto;
+    }
 `;
 
 const Logo = styled.div `
@@ -69,12 +76,15 @@ const List = styled.ul `
     justify-content: center;
     flex-direction: row;
     height: 60px;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        height: auto;
+    }
 `;
 
 const Li = styled.li `
     margin-right: 32px;
     list-style: none;
-    height: 60px;
     &:hover {
       border-bottom: 6px solid #ED0F04;
     }
@@ -85,7 +95,9 @@ const Li = styled.li `
         width: max-content;
         text-decoration: none;
         color: #ED0F04;
-        height: 60px
+    }
+    @media (max-width: 800px) {
+        height: 40px;
     }
 `;
 

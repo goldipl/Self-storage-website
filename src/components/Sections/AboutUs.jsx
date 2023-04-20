@@ -35,19 +35,23 @@ const AboutUs = () => {
 }
 
 const SectionContainer = styled.div `
-    position: absolute;
-    top: calc(80vh - 80px);
-    left: 0;
-    right: 0;
+    position: relative;
     display: flex;
     width: 70vw;
     margin: 0 auto;
-    background-color: #FFFFFF;
 `
 
 const AboutUsContainer = styled.div `
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
     display: flex;
     width: 100%;
+    background-color: #FFFFFF;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 `
 
 const Slot = styled.div `
@@ -56,8 +60,11 @@ const Slot = styled.div `
     align-items: flex-start;
     flex-direction: column;
     width: 30%;
-    height: 400px;
+    height: auto;
     margin: 24px;
+    @media (max-width: 800px) {
+        width: 90%;
+    }
 `
 
 const SlotTitle = styled.h1 `
