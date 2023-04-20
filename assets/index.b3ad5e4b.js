@@ -92,6 +92,9 @@ Error generating stack: `+i.message+`
     width: 100vw;
     height: 60px;
     background-color: #FFFFFF;
+    @media (max-width: 800px) {
+        height: auto;
+    }
 `,fv=ue.div`
     display: flex;
     flex-direction: row;
@@ -100,6 +103,10 @@ Error generating stack: `+i.message+`
     width: 70vw;
     height: 60px;
     margin: 0 auto;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        height: auto;
+    }
 `,dv=ue.div`
     font-size: 32px;
     font-weight: 700;
@@ -120,10 +127,13 @@ Error generating stack: `+i.message+`
     justify-content: center;
     flex-direction: row;
     height: 60px;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        height: auto;
+    }
 `,cr=ue.li`
     margin-right: 32px;
     list-style: none;
-    height: 60px;
     &:hover {
       border-bottom: 6px solid #ED0F04;
     }
@@ -134,7 +144,9 @@ Error generating stack: `+i.message+`
         width: max-content;
         text-decoration: none;
         color: #ED0F04;
-        height: 60px
+    }
+    @media (max-width: 800px) {
+        height: 40px;
     }
 `,mv="/Self-storage-website/assets/selfstorage.414ba96a.jpg",hv=()=>nt(vv,{children:[A(gv,{src:mv,alt:"self-storage"}),nt(kv,{children:[A(yv,{"data-aos":"fade-up","data-aos-duration":"3000",children:A(wv,{children:"Szukasz dodatkowego miejsca do przechowywania?"})}),A(Sv,{"data-aos":"fade-up","data-aos-duration":"3000","data-aos-delay":"500",children:A(xv,{children:"Sprawd\u017A cen\u0119"})})]})]}),vv=ue.div`
   position: relative;
@@ -159,12 +171,18 @@ Error generating stack: `+i.message+`
   color: #FFFFFF;
   margin-top: 0;
   text-align: center;
+  @media (max-width: 800px) {
+    font-size: 32px;
+  }
 `,kv=ue.div`
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
   width: 600px;
+  @media (max-width: 800px) {
+    width: 80%;
+  }
 `,Sv=ue.div`
   display: flex;
   justify-content: center;
@@ -255,15 +273,24 @@ svg {
     background-color: #112F5E;
 `,Pv=ue.div`
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 70vw;
     height: 40px;
     margin: 0 auto;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        height: auto;
+    }
 `,Nv=ue.p`
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
+    @media (max-width: 800px) {
+        text-align: center;
+        font-size: 12px;
+    }
 `,Tv=ue.a`
     display: flex;
     justify-content: center;
@@ -296,25 +323,32 @@ svg {
         }
     }
 `,zv=()=>A(Lv,{children:nt($v,{children:[nt(Cl,{children:[A(El,{children:"Slot"}),A(_l,{children:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor adipisci molestiae dolorum doloribus at sunt corporis repellendus ab nemo aperiam. Tempora esse delectus odio perspiciatis corporis sequi provident saepe rerum? Optio eveniet explicabo accusamus earum provident. Quos cumque ut aut tempore ratione rerum nostrum, consequatur repellendus maiores nihil itaque facere reprehenderit, dicta non tempora nisi vitae molestiae voluptatum voluptates veritatis. Mollitia porro numquam eum dolores? Ullam, eligendi. Vitae magnam nam doloremque deserunt non unde. Sunt vero eius laudantium quis, facere vitae! Nihil facilis, optio soluta fugit autem tempore labore qui?"})]}),nt(Cl,{children:[A(El,{children:"Slot"}),A(_l,{children:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor adipisci molestiae dolorum doloribus at sunt corporis repellendus ab nemo aperiam. Tempora esse delectus odio perspiciatis corporis sequi provident saepe rerum? Optio eveniet explicabo accusamus earum provident. Quos cumque ut aut tempore ratione rerum nostrum, consequatur repellendus maiores nihil itaque facere reprehenderit, dicta non tempora nisi vitae molestiae voluptatum voluptates veritatis. Mollitia porro numquam eum dolores? Ullam, eligendi. Vitae magnam nam doloremque deserunt non unde. Sunt vero eius laudantium quis, facere vitae! Nihil facilis, optio soluta fugit autem tempore labore qui?"})]}),nt(Cl,{children:[A(El,{children:"Slot"}),A(_l,{children:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor adipisci molestiae dolorum doloribus at sunt corporis repellendus ab nemo aperiam. Tempora esse delectus odio perspiciatis corporis sequi provident saepe rerum? Optio eveniet explicabo accusamus earum provident. Quos cumque ut aut tempore ratione rerum nostrum, consequatur repellendus maiores nihil itaque facere reprehenderit, dicta non tempora nisi vitae molestiae voluptatum voluptates veritatis. Mollitia porro numquam eum dolores? Ullam, eligendi. Vitae magnam nam doloremque deserunt non unde. Sunt vero eius laudantium quis, facere vitae! Nihil facilis, optio soluta fugit autem tempore labore qui?"})]})]})}),Lv=ue.div`
-    position: absolute;
-    top: calc(80vh - 80px);
-    left: 0;
-    right: 0;
+    position: relative;
     display: flex;
     width: 70vw;
     margin: 0 auto;
-    background-color: #FFFFFF;
 `,$v=ue.div`
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
     display: flex;
     width: 100%;
+    background-color: #FFFFFF;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 `,Cl=ue.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     width: 30%;
-    height: 400px;
+    height: auto;
     margin: 24px;
+    @media (max-width: 800px) {
+        width: 90%;
+    }
 `,El=ue.h1`
     font-size: 24px;
     margin: 0 auto 16px;
