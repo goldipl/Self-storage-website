@@ -14,15 +14,15 @@ const Header = () => {
                 <Link to={`#home`}>SELF<span>STORAGE</span></Link>
             </Logo>
             <Hamburger onClick={() => setOpen(!open)}>
-                <MenuIcon open={!open}>
+                <MenuIcon open={open}>
                     <box-icon name='menu-alt-right'></box-icon>
                 </MenuIcon>
-                <XIcon open={open}> 
+                <XIcon open={!open}> 
                     <box-icon name='x'></box-icon>
                 </XIcon>
             </Hamburger>
         </TopNav>
-        <List open={open}>
+        <List open={!open}>
             <Li>
                 <Link to={`#home`}>Strona główna</Link>
             </Li>
