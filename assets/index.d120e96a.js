@@ -375,6 +375,8 @@ display: none;
     background-color: #FFFFFF;
     @media (max-width: 800px) {
         flex-direction: column;
+        padding: 16px;
+        left: -16px;
     }
 `,Cl=ee.div`
     display: flex;
@@ -385,7 +387,8 @@ display: none;
     height: auto;
     margin: 24px;
     @media (max-width: 800px) {
-        width: 90%;
+        width: 100%;
+        margin: 0;
     }
 `,El=ee.h1`
     font-size: 24px;
