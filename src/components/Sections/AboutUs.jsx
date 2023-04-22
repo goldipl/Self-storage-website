@@ -51,6 +51,8 @@ const AboutUsContainer = styled.div `
     background-color: #FFFFFF;
     @media (max-width: 800px) {
         flex-direction: column;
+        padding: 16px;
+        left: -16px;
     }
 `
 
@@ -63,7 +65,8 @@ const Slot = styled.div `
     height: auto;
     margin: 24px;
     @media (max-width: 800px) {
-        width: 90%;
+        width: 100%;
+        margin: 0;
     }
 `
 
