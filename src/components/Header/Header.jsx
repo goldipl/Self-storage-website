@@ -1,14 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import 'boxicons'
 
 const Header = () => {
   return (
     <Navbar>
       <NavbarContainer>
-        <Logo>
-            <Link to={`#home`}>SELF<span>STORAGE</span></Link>
-        </Logo>
+        <TopNav>
+            <Logo>
+                <Link to={`#home`}>SELF<span>STORAGE</span></Link>
+            </Logo>
+            <box-icon name='menu-alt-right'></box-icon>
+        </TopNav>
         <List>
             <Li>
                 <Link to={`#home`}>Strona główna</Link>
@@ -51,6 +55,7 @@ const NavbarContainer = styled.div `
     @media (max-width: 800px) {
         flex-direction: column;
         height: auto;
+        width: 100vw;
     }
 `;
 
@@ -70,15 +75,24 @@ const Logo = styled.div `
     }
 `;
 
+const TopNav = styled.div `
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+`;
+
 const List = styled.ul `
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     height: 60px;
+    display: none;
     @media (max-width: 800px) {
         flex-direction: column;
         height: auto;
+        padding: 0;
     }
 `;
 
@@ -98,6 +112,7 @@ const Li = styled.li `
     }
     @media (max-width: 800px) {
         height: 40px;
+        margin-right: 0;
     }
 `;
 

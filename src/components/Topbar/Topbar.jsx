@@ -8,12 +8,14 @@ const Topbar = () => {
         <TopbarContainer>
             <Text>Najnowocześniejsze magazyny w Polsce. Unikat na skalę światową.</Text>
             <SocialsContainer>
-                <a href="http://www.facebook.com">
-                    <box-icon type='logo' name='facebook-square'></box-icon>
-                </a>
-                <a href="http://www.instagram.com">
-                    <box-icon type='logo' name='instagram'></box-icon>
-                </a>
+                <SocialsIconLinks>
+                    <a href="http://www.facebook.com">
+                        <box-icon type='logo' name='facebook-square'></box-icon>
+                    </a>
+                    <a href="http://www.instagram.com">
+                        <box-icon type='logo' name='instagram'></box-icon>
+                    </a>
+                </SocialsIconLinks>
                 <ActionButton href='tel:+48600600600'>Tel. +48 600 600 600</ActionButton>
             </SocialsContainer>
         </TopbarContainer>
@@ -37,6 +39,7 @@ const TopbarContainer = styled.div `
     @media (max-width: 800px) {
         flex-direction: column;
         height: auto;
+        width: 100vw;
     }
 `;
 
@@ -82,6 +85,20 @@ const SocialsContainer = styled.div `
         &:hover {
             filter: invert(0%);
         }
+        @media (max-width: 800px) {
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 800px) {
+        justify-content: flex-end;
+        width: 100vw;
+    }
+`;
+
+const SocialsIconLinks = styled.div `
+    display: flex;
+    a {
+        margin-right: 16px;
     }
 `;
 
