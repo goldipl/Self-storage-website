@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import 'boxicons'
 
 const Header = () => {
+    const [open, setOpen] = useState(false);
+
   return (
     <Navbar>
       <NavbarContainer>
@@ -11,11 +13,16 @@ const Header = () => {
             <Logo>
                 <Link to={`#home`}>SELF<span>STORAGE</span></Link>
             </Logo>
-            <Hamburger>
-                <box-icon name='menu-alt-right'></box-icon>
+            <Hamburger onClick={() => setOpen(!open)}>
+                <MenuIcon open={!open}>
+                    <box-icon name='menu-alt-right'></box-icon>
+                </MenuIcon>
+                <XIcon open={open}> 
+                    <box-icon name='x'></box-icon>
+                </XIcon>
             </Hamburger>
         </TopNav>
-        <List>
+        <List open={open}>
             <Li>
                 <Link to={`#home`}>Strona główna</Link>
             </Li>
@@ -85,13 +92,22 @@ const TopNav = styled.div `
 `;
 
 const Hamburger = styled.div `
-    box-icon {
-        display: none;
-        @media (max-width: 800px) {
-            display: block;
-        }
-    }
+    display: block;
 `;
+
+const MenuIcon = styled.div `
+    display: none;
+    @media (max-width: 800px) {
+        display: ${({ open }) => open ? 'none' : 'block'};
+    }
+`
+
+const XIcon = styled.div `
+display: none;
+@media (max-width: 800px) {
+    display: ${({ open }) => open ? 'none' : 'block'};
+}
+`
 
 const List = styled.ul `
     display: flex;
@@ -100,7 +116,7 @@ const List = styled.ul `
     flex-direction: row;
     height: 60px;
     @media (max-width: 800px) {
-        display: none;
+        display: ${({ open }) => open ? 'none' : 'block'};
         flex-direction: column;
         height: auto;
         padding: 0;
@@ -110,6 +126,9 @@ const List = styled.ul `
 const Li = styled.li `
     margin-right: 32px;
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
       border-bottom: 6px solid #ED0F04;
     }
