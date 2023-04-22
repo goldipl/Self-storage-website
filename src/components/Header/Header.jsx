@@ -11,7 +11,9 @@ const Header = () => {
             <Logo>
                 <Link to={`#home`}>SELF<span>STORAGE</span></Link>
             </Logo>
-            <box-icon name='menu-alt-right'></box-icon>
+            <Hamburger>
+                <box-icon name='menu-alt-right'></box-icon>
+            </Hamburger>
         </TopNav>
         <List>
             <Li>
@@ -82,14 +84,23 @@ const TopNav = styled.div `
     width: 95%;
 `;
 
+const Hamburger = styled.div `
+    box-icon {
+        display: none;
+        @media (max-width: 800px) {
+            display: block;
+        }
+    }
+`;
+
 const List = styled.ul `
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     height: 60px;
-    display: none;
     @media (max-width: 800px) {
+        display: none;
         flex-direction: column;
         height: auto;
         padding: 0;
