@@ -220,6 +220,7 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60px;
     &:hover {
       border-bottom: 6px solid #ED0F04;
     }
