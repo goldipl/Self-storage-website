@@ -21,11 +21,11 @@ Used technologies:
 ## Screenshots
 * Desktop version :computer:     
   
---*To Do*
+![screenshot](./screenshots/screenshot_desktop.png)
 
 * Mobile version :iphone:        
 
---*To Do*
+![screenshot](./screenshots/screenshot_mobile.png)
 
 ## Live :star2:
 * https://goldipl.github.io/Self-storage-website/
