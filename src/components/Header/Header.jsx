@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import 'boxicons'
+import logo from './../../assets/img/logo.png'
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
       <NavbarContainer>
         <TopNav>
             <Logo>
-                <Link to={`#home`}>SELF<span>STORAGE</span></Link>
+                <Link to={`#home`}><img src={logo} alt="logo" width="145" height="60"/></Link>
             </Logo>
             <Hamburger onClick={() => setOpen(!open)}>
                 <MenuIcon open={open}>
@@ -76,10 +77,8 @@ const Logo = styled.div `
     a {
         text-decoration: none;
         color: #000000;
-        span {
-          font-size: 16px;
-          font-weight: 300;
-          color: #ED0F04;
+        img {
+            margin-top: 8px;
         }
     }
 `;
